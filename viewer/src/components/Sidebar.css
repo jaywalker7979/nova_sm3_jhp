@@ -1,0 +1,161 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #141b23;
+  border-right: 1px solid #24303c;
+}
+
+.sidebar-head {
+  padding: 16px 16px 8px;
+}
+
+.sidebar-head h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.sidebar-head p {
+  margin: 4px 0 0;
+  color: #8ea0b3;
+  font-size: 13px;
+}
+
+.search {
+  display: block;
+  padding: 8px 12px 12px;
+}
+
+.search input {
+  width: 100%;
+  border: 1px solid #31404e;
+  background: #0e141b;
+  border-radius: 8px;
+  padding: 8px 10px;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #6ea2d4;
+}
+
+.tree-scroll {
+  overflow: auto;
+  padding: 0 8px 16px;
+  min-height: 0;
+}
+
+.sidebar-message {
+  margin: 12px;
+  color: #8ea0b3;
+  font-size: 13px;
+}
+
+.tree {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.tree > li > .tree {
+  padding-left: 14px;
+}
+
+.folder,
+.file {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+.folder:hover,
+.file:hover {
+  background: #1c2732;
+}
+
+.file.active {
+  background: #1d3b57;
+}
+
+.chevron {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #8ea0b3;
+  flex: none;
+}
+
+.chevron.open {
+  transform: rotate(90deg);
+}
+
+.file-text {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.file-name,
+.folder span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.file-line .file-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.file-name {
+  font-size: 13px;
+}
+
+.file-kind {
+  flex: none;
+  color: #d7e7f6;
+  background: #24384c;
+  border-radius: 999px;
+  padding: 1px 6px;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.file-detail,
+.file-size {
+  color: #8ea0b3;
+  font-size: 12px;
+}
+
+.file-size {
+  flex: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

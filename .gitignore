@@ -1,0 +1,38 @@
+# 운영체제
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# 에디터
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+*.local
+
+# 비밀·환경 변수
+.env
+.env.*
+!.env.example
+
+# 빌드 산출물
+build/
+*.hex
+*.elf
+*.bin
+*.log

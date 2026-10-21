@@ -1,0 +1,19 @@
+---
+description: Nova SM3 프로젝트의 Notion 작업 현황 페이지
+alwaysApply: true
+---
+
+# Notion 프로젝트 페이지
+
+이 프로젝트의 Notion 페이지는 아래 한 페이지다. 작업 현황, ToDO, Done은 이 페이지와 그 하위 페이지에만 기록한다.
+
+- 제목: Nova SM3
+- URL: https://app.notion.com/p/jaywalker79/Nova-SM3-3f3d46a4c5bb805a8d4ed23a490a3a7f
+- Page ID: `3f3d46a4-c5bb-805a-8d4e-d23a490a3a7f`
+
+## 작업 마무리
+
+작업을 마치면 이 페이지에 작업 현황을 정리한다.
+
+- 앞으로 개발이 필요한 항목은 하위 페이지 **ToDO**에 목록으로 추가한다. ToDO 페이지가 없으면 만든다.
+- 완료된 항목은 하위 페이지 **Done**에 목록으로 정리한다. Done 페이지가 없으면 만든다.

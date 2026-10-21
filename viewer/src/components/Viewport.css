@@ -1,0 +1,45 @@
+.viewport {
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+}
+
+.viewport canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.viewport-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #d5e0ea;
+  background: rgba(14, 19, 24, 0.45);
+  pointer-events: none;
+  text-align: center;
+  padding: 24px;
+}
+
+.viewport-overlay.error {
+  color: #ffb4b4;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid #31404e;
+  border-top-color: #8ec0ef;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,99 @@
+.app {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  height: 100%;
+  min-height: 0;
+}
+
+.stage {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  min-width: 0;
+  min-height: 0;
+  background:
+    radial-gradient(1200px 500px at 70% -10%, rgba(90, 140, 190, 0.16), transparent 55%),
+    #0e1318;
+}
+
+.toolbar,
+.status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: rgba(14, 19, 24, 0.92);
+  border-color: #24303c;
+  border-style: solid;
+}
+
+.toolbar {
+  border-width: 0 0 1px;
+  flex-wrap: wrap;
+}
+
+.rotate-group,
+.history-group,
+.support-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.toolbar button.support-add {
+  color: #f0b27a;
+}
+
+.toolbar button.rot-x {
+  color: #f0a0a0;
+}
+
+.toolbar button.rot-y {
+  color: #9ed69e;
+}
+
+.toolbar button.rot-z {
+  color: #9ec0f0;
+}
+
+.status {
+  border-width: 1px 0 0;
+  color: #9aabbd;
+  font-size: 13px;
+}
+
+.status-name {
+  color: #e7edf4;
+  margin-right: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toolbar button {
+  border: 1px solid #31404e;
+  background: #18222c;
+  border-radius: 8px;
+  padding: 7px 12px;
+}
+
+.toolbar button:hover:not(:disabled) {
+  border-color: #5b87b0;
+}
+
+.toolbar button.on {
+  background: #1d3b57;
+  border-color: #6ea2d4;
+  color: #f3f8fd;
+}
+
+.toolbar button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+@media (max-width: 800px) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 42vh minmax(0, 1fr);
+  }
+}
